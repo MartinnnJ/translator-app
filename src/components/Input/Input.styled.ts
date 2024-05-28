@@ -32,6 +32,7 @@ export const StyledTextArea = styled.textarea`
   border-radius: ${baseRadius};
   border: 1px solid ${inputFieldBorderColor};
   padding: ${inputFieldInnerPadding};
+  padding-bottom: calc(${inputFieldInnerPadding} + 15px);
   resize: none;
 
   &::placeholder {

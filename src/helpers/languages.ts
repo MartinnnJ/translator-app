@@ -2,6 +2,8 @@ import axios from 'axios';
 import { v4 } from 'uuid';
 
 export default async function getSupportedLanguages() {
+  const API_URL = import.meta.env.VITE_API_URL;
+
   const config = {
     headers: {
       'X-ClientTraceId': v4(),
@@ -14,7 +16,7 @@ export default async function getSupportedLanguages() {
   };
 
   try {
-    return await axios.get('https://api.cognitive.microsofttranslator.com/languages', config);
+    return await axios.get(`${API_URL}/languages`, config);
   } catch (err) {
     console.log(err);
   }

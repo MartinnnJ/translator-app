@@ -30,12 +30,12 @@ body {
 }
 
 .logo-box {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
-.logo {
+.logo-img {
   display: block;
-  max-width: 200px;
+  max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
 }

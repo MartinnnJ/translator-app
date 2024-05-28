@@ -15,9 +15,10 @@ export const StyledContainer = styled.div`
   position: relative;
   font-size: ${inputFieldMobileFontSize};
   border: 1px solid ${inputFieldBorderColor};
-  height: ${inputFieldMobileHeight};
+  min-height: ${inputFieldMobileHeight};
   padding: ${inputFieldInnerPadding};
   border-radius: ${baseRadius};
+  overflow: hidden;
 
   small {
     position: absolute;
@@ -33,7 +34,7 @@ export const StyledContainer = styled.div`
 
   @media (min-width: ${breakpointDesktop}) {
     width: calc((100% / 2) - (${gapSize} / 2));
-    height: ${inputFieldDesktopHeight};
+    min-height: ${inputFieldDesktopHeight};
     font-size: ${inputFieldDesktopFontSize};
   }
 `;
