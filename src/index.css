@@ -1,0 +1,56 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.rotate {
+  transform: rotate(0deg);
+  transition: transform .25s ease-in;
+}
+
+.rotate-animate {
+  transform: rotate(-180deg);
+}
+
+.logo-box {
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.logo-desc {
+  display: block;
+  text-align: center;
+}
+
+.logo-desc a {
+  text-decoration: none;
+  color: #007FFF;
+  font-weight: 500;
+}
+
+.logo-desc a:hover {
+  text-decoration: underline;
+}
